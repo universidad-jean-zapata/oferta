@@ -1,0 +1,31 @@
+site_name: Universidad Tecnica Particual de Loja 
+site_url: https://universidad-jean-zapata.github.io/oferta/
+theme:
+  name: material
+  language: es  
+  palette:
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.sections
+    - navigation.tabs # Añade pestañas arriba para que se vea más moderno
+    - content.code.copy
+    - search.highlight
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji: # Esto activa los iconos
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Inicio: index.md
+  - Ingeniería: ingenieria.md
+  - Sociales: ciencias sociales.md
+  - Naturales: ciencias naturales.md
+  - Económicas: ciencias economicas.md
+  - Jurídicas: ciencias juridicas.md
